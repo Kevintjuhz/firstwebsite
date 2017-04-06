@@ -11,6 +11,16 @@ body {
     margin: 0 auto;
 }
 
+.content {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.content-header {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 /* Header */
 
 .navbar {
@@ -66,16 +76,6 @@ body {
 
 /* Services Section */
 
-.content {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.content-header {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
 #services-section {
     box-sizing: border-box;
     background-color: #fcfcfc;
@@ -119,7 +119,7 @@ fieldset.service-items h3 {
 
 fieldset.service-items p {
     text-align: center;
-    color: #333;
+    color: #323232;
 }
 
 
@@ -176,6 +176,7 @@ fieldset.testimonials h3 {
 
 fieldset.testimonials p {
     font-size: 16px;
+    color: #323232;
 }
 
 .testimonial-image {
@@ -186,6 +187,18 @@ fieldset.testimonials p {
     background-image: url(img/profile-picture1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+div.website-link i span {
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 5px;
+    color: #323232;
+    font-weight: normal;
+}
+
+div.website-link i {
+    padding: 10px;
+    width: 100%
 }
 
 /* Parallax Scrolling Img */
@@ -220,6 +233,10 @@ fieldset.testimonials p {
 
 @media screen and (max-width: 991px) {
     fieldset.service-items, fieldset.testimonials {
-        margin-top: 20px;
+        margin-top: 40px;
+    }
+    
+    fieldset#frontend, fieldset#first {
+        margin-top: 0;
     }
 }
