@@ -4,7 +4,7 @@ window.sr = ScrollReveal();
 
 sr.reveal('.service-items', { 
     origin: 'left',
-    duration: 500, 
+    duration: 300, 
     scale: 0.9,
     mobile: true,
     easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
@@ -15,7 +15,7 @@ sr.reveal('.service-items', {
 
 sr.reveal('.testimonials', { 
     origin: 'left',
-    duration: 200, 
+    duration: 300, 
     distance: '100px',
     delay: 100,
     scale: 0.9,

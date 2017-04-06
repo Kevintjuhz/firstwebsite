@@ -206,7 +206,7 @@ fieldset.testimonials p {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     fieldset.service-items, fieldset.testimonials {
         margin-top: 20px;
     }
@@ -216,13 +216,9 @@ fieldset.testimonials p {
     #header-image {
         height: 40vh;
     }
-    
-    .parallax-window {
-        height: 200px;
-    }
 }
 
-@media screen and (max-width: 692px) {
+@media screen and (max-width: 991px) {
     fieldset.service-items, fieldset.testimonials {
         margin-top: 20px;
     }
