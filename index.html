@@ -54,7 +54,7 @@
                             
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus nunc, vitae ultrices libero interdum at. In hac habitasse platea dictumst. Integer ac viverra orci. Phasellus ac tincidunt erat. Quisque ex metus, blandit a venenatis semper, cursus pulvinar neque. Curabitur neque nibh, fringilla et risus in, tempus volutpat purus. Ut diam leo, molestie in diam ut, porta bibendum ipsum.</p>
                             
-                            <button type="button" class="btn btn-primary">Read More...</button>
+                            <a href="services.html"><button type="button" class="btn btn-primary">Read More...</button></a>
                         </fieldset>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                             
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus nunc, vitae ultrices libero interdum at. In hac habitasse platea dictumst. Integer ac viverra orci. Phasellus ac tincidunt erat. Quisque ex metus, blandit a venenatis semper, cursus pulvinar neque. Curabitur neque nibh, fringilla et risus in, tempus volutpat purus. Ut diam leo, molestie in diam ut, porta bibendum ipsum.</p>
                             
-                            <button type="button" class="btn btn-primary">Read More...</button>
+                            <a href="services.html"><button type="button" class="btn btn-primary">Read More...</button></a>
                         </fieldset>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                             
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla tellus nunc, vitae ultrices libero interdum at. In hac habitasse platea dictumst. Integer ac viverra orci. Phasellus ac tincidunt erat. Quisque ex metus, blandit a venenatis semper, cursus pulvinar neque. Curabitur neque nibh, fringilla et risus in, tempus volutpat purus. Ut diam leo, molestie in diam ut, porta bibendum ipsum.</p>
                             
-                            <button type="button" class="btn btn-primary">Read More...</button>
+                            <a href="services.html"><button type="button" class="btn btn-primary">Read More...</button></a>
                         </fieldset>
                     </div>
                 </div>
@@ -116,7 +116,8 @@
                     <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
                 </div><!-- Portfolio Carousel Section -->
             </div> <!-- Portfolio Section -->
-            <div class="parallax-img"></div>
+            
+            <div class="parallax-window" data-parallax="scroll" data-image-src="/img/Parallax1.jpg"></div>
             
             <div id="testimonial-section">
             <h2 class="content-header">Testimonials</h2>
@@ -129,10 +130,11 @@
                             
                             <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc est, pretium et porta id, consectetur sit amet ipsum. Fusce sagittis libero sed urna fringilla, non aliquet massa ultricies. Aliquam vestibulum ligula viverra accumsan hendrerit. Vestibulum imperdiet, ex eu consectetur mattis, mi erat volutpat metus, elementum elementum ipsum urna vel.<strong>"</strong></p> 
                             
-                            
+                            <a href="#">
                             <div class="website-link">
-                                <i class="fa fa-link fa-2x" aria-hidden="true"><span>www.example.com</span></i>
-                            </div>     
+                                <i class="fa fa-link" aria-hidden="true"><span>www.example.com</span></i>
+                            </div>
+                            </a>    
                         </fieldset>
                     </div>
                 </div>
@@ -145,9 +147,11 @@
                             
                             <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc est, pretium et porta id, consectetur sit amet ipsum. Fusce sagittis libero sed urna fringilla, non aliquet massa ultricies. Aliquam vestibulum ligula viverra accumsan hendrerit. Vestibulum imperdiet, ex eu consectetur mattis, mi erat volutpat metus, elementum elementum ipsum urna vel.<strong>"</strong></p> 
                             
+                            <a href="#">
                             <div class="website-link">
-                                <i class="fa fa-link fa-2x" aria-hidden="true"><span>www.example.com</span></i>
+                                <i class="fa fa-link" aria-hidden="true"><span>www.example.com</span></i>
                             </div>
+                            </a>
                         </fieldset>
                     </div>
                 </div>
@@ -160,13 +164,15 @@
                             
                             <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nunc est, pretium et porta id, consectetur sit amet ipsum. Fusce sagittis libero sed urna fringilla, non aliquet massa ultricies. Aliquam vestibulum ligula viverra accumsan hendrerit. Vestibulum imperdiet, ex eu consectetur mattis, mi erat volutpat metus, elementum elementum ipsum urna vel.<strong>"</strong></p> 
                              
+                            <a href="#">
                             <div class="website-link">
-                                <i class="fa fa-link fa-2x" aria-hidden="true"><span>www.example.com</span></i>
+                                <i class="fa fa-link" aria-hidden="true"><span>www.example.com</span></i>
                             </div>
+                            </a>
                         </fieldset>
                     </div>
                 </div>
-            </div>   
+            </div> 
         </div> <!-- services-section -->
         
         </div> <!-- Content -->
@@ -175,6 +181,8 @@
         <!-- JavaScripts -->
         
         <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
         <script 
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -185,6 +193,9 @@
         
         <!-- Scroll Reveal -->
         <script src="scroll%20reveal/dist/scrollreveal.min.js"></script>
+        
+        <!-- Parallax Scrolling -->
+        <script src="/parallax/parallax.min.js"></script>
         
         <script type="text/javascript" src="script.js"></script> 
         <script type="text/javascript" src="animations.js"></script>

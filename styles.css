@@ -3,7 +3,7 @@ http://paletton.com/#uid=13y0u0koMBxeEOzk8HwuDy6x1pp */
 
 body {
     box-sizing: border-box;
-    background-color: #d3d3d3
+    background-color: #d3d3d3;
 }
 
 #container {
@@ -19,6 +19,10 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    cursor: default;
 }
 
 /* Header */
@@ -71,6 +75,10 @@ body {
     background-color: rgba(255, 255, 255, 0.10);
 }
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #d4d4d4; 
+}
+
 
 /* Home Page CSS */
 
@@ -78,13 +86,14 @@ body {
 
 #services-section {
     box-sizing: border-box;
-    background-color: #fcfcfc;
+    background-color: #f3f3f3;
     padding: 20px 0px 40px;
 }
 
 fieldset.service-items {
-    background: #fff;
+    background: #fdfdfd;
     padding: 20px;
+    z-index: -5;
 }
 
 fieldset.service-items button {
@@ -126,13 +135,9 @@ fieldset.service-items p {
 /* Portfolio Section */
 
 #portfolio-section {
-    padding: 0 30px 30px;
-    background-color: #fff;
+    padding: 20px 30px 40px;
+    background-color: #fdfdfd;
     /* fcfcfc */
-}
-
-#portfolio-section h2 {
-    padding-top: 10px;
 }
 
 #portfolio-carousel {
@@ -160,13 +165,13 @@ fieldset.service-items p {
 /* Testimonials Section */
 #testimonial-section {
     box-sizing: border-box;
-    background-color: #fcfcfc;
+    background-color: #f3f3f3;
     padding: 20px 0px 40px;
 }
 
 fieldset.testimonials  {
     padding: 20px;
-    background: #fff;
+    background: #fdfdfd;
 }
 
 fieldset.testimonials h3 {
@@ -194,20 +199,27 @@ div.website-link i span {
     margin-left: 5px;
     color: #323232;
     font-weight: normal;
+    color: white;
 }
 
 div.website-link i {
-    padding: 10px;
-    width: 100%
+    padding: 15px;
+    width: 100%;
+    color: white;
+}
+
+div.website-link {
+    background-color: #337ab7;
+    border-radius: 4px;
 }
 
 /* Parallax Scrolling Img */
 
 .parallax-window {
-    height: 400px;
-    background: transparent;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    height: 500px; 
+    background-image: url('img/Parallax1.jpg'); 
+    background-size: 200%; 
+    background-position: center bottom;
 }
 
 /* Media Queries */
@@ -238,5 +250,39 @@ div.website-link i {
     
     fieldset#frontend, fieldset#first {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        background-color: #fdfdfd;
+        color: black;
+    }
+    
+    .navbar-inverse .navbar-brand {
+        color: black;
+    }    
+    
+    .navbar-inverse .navbar-toggle {
+        border: solid 1px black;
+    }
+    
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: black;
+    }
+    
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        color: black;
+        background-color: #f3f3f3;
+        border-radius: 0px;
+    }
+    
+    .navbar-inverse .navbar-nav li a {
+        color: black;
+        background-color: #fdfdfd;
+    }
+    
+    .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        color: #323232;
     }
 }
