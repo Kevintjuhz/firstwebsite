@@ -6,22 +6,13 @@ body {
     background-color: #d3d3d3;
 }
 
-.navbar-collapse {
-    padding-right: 0px;
-    padding-left: 0px;
-}
 
-div#container, .nav-fix, div#navBar.collapse.navbar-collapse {
+div#container {
     width: 1420px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-nav.container {
-    width: 1420px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
 
 .content {
     font-family: Helvetica, Arial, sans-serif;
@@ -33,20 +24,17 @@ nav.container {
     margin-bottom: 10px;
 }
 
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 p, h1, h2, h3, h4, h5, h6 {
     cursor: default;
 }
 
 /* Header */
 
+/*
 .navbar {
     border-radius: 0px;
 }
+*/
 
 
 #header-image {
@@ -97,10 +85,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Navbar on Scroll */
-div.navbar-fixed-top .container-fluid {
-    background-color: #fdfdfd;
-}
 
 /* Home Page CSS */
 
@@ -238,33 +222,14 @@ div.website-link {
 /* Parallax Scrolling Img */
 
 .parallax-window {
-    min-height: 40vw; 
+    min-height: 35vw; 
     background: transparent;
-/*
-    background-image: url('img/Parallax1.jpg'); 
-    background-size: 130%; 
-    background-position: center bottom;
-*/
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 1420px) {
     div#container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    nav.container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .nav-fix {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    div#navBar.collapse.navbar-collapse {
         width: 100%;
         margin: 0 auto;
     }
@@ -280,11 +245,17 @@ div.website-link {
     #header-image {
         height: 40vh;
     }
+    
+    .parallax-window {
+        min-height: 50vw; 
+        background: transparent;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
     fieldset.service-items, fieldset.testimonials {
-        margin-top: 40px;
+        margin-top: 20px;
     }
     
     fieldset#frontend, fieldset#first {
@@ -292,31 +263,11 @@ div.website-link {
     }
 }
 
-@media (min-width: 768px) {
-    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    
-    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-        margin-left: 0px;
-    }
-    
-    .navbar-right {
-        float: right!important;
-        margin-right: 0px;
-    }
-    
-    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-}    
 
 @media screen and (max-width: 767px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
         background-color: #fdfdfd;
-        color: black;
+        color: #323232;
         border-bottom: solid 1px #323232;
     }
     
@@ -329,11 +280,11 @@ div.website-link {
     }    
     
     .navbar-inverse .navbar-toggle {
-        border: solid 1px black;
+        border: solid 1px #323232;
     }
     
     .navbar-inverse .navbar-toggle .icon-bar {
-        background-color: black;
+        background-color: #323232;
     }
     
     .navbar-inverse:hover .navbar-toggle:hover {
