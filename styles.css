@@ -6,9 +6,21 @@ body {
     background-color: #d3d3d3;
 }
 
-#container {
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+div#container, .nav-fix, div#navBar.collapse.navbar-collapse {
     width: 1420px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+nav.container {
+    width: 1420px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .content {
@@ -19,6 +31,11 @@ body {
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -79,6 +96,11 @@ p, h1, h2, h3, h4, h5, h6 {
     border-color: #d4d4d4; 
 }
 
+
+/* Navbar on Scroll */
+div.navbar-fixed-top .container-fluid {
+    background-color: #fdfdfd;
+}
 
 /* Home Page CSS */
 
@@ -216,7 +238,7 @@ div.website-link {
 /* Parallax Scrolling Img */
 
 .parallax-window {
-    min-height: 30vw; 
+    min-height: 40vw; 
     background: transparent;
 /*
     background-image: url('img/Parallax1.jpg'); 
@@ -228,7 +250,21 @@ div.website-link {
 /* Media Queries */
 
 @media screen and (max-width: 1420px) {
-    #container {
+    div#container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav.container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .nav-fix {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    div#navBar.collapse.navbar-collapse {
         width: 100%;
         margin: 0 auto;
     }
@@ -256,14 +292,40 @@ div.website-link {
     }
 }
 
+@media (min-width: 768px) {
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    
+    .navbar-right {
+        float: right!important;
+        margin-right: 0px;
+    }
+    
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}    
+
 @media screen and (max-width: 767px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
         background-color: #fdfdfd;
         color: black;
+        border-bottom: solid 1px #323232;
     }
     
     .navbar-inverse .navbar-brand {
         color: black;
+    }   
+    
+    .navbar-inverse:hover .navbar-brand:hover {
+        color: #6A6A6A;
     }    
     
     .navbar-inverse .navbar-toggle {
@@ -274,6 +336,21 @@ div.website-link {
         background-color: black;
     }
     
+    .navbar-inverse:hover .navbar-toggle:hover {
+        border: solid 1px #6A6A6A;
+    }
+    
+    .navbar-inverse .navbar-nav li a:hover {
+        color: #6A6A6A;
+        background-color: #fdfdfd;
+    }
+    
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+        color: #6A6A6A;
+        background-color: #f3f3f3;
+        border-radius: 0px;
+    }
+        
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
         color: black;
         background-color: #f3f3f3;
